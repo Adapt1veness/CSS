@@ -1,9 +1,10 @@
 
 
-p {
+.example {
 	font-family: Arial, Verdana, Sans-Serif;
 	font-size:56px;
 	font-color:blue !important;
 	color:red !important;
+	font-weight:1200;
 }
 
