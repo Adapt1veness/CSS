@@ -1,4 +1,4 @@
-var css = `
+
 /* -------------------- Font styles ---------------------- */
 /*  Half page responsive design */
 
@@ -670,8 +670,3 @@ ul {
 	height: 240px;
 }
 
-
-`;
-
-// Inject the CSS into an HTML tag which has the id StyleDiv
-$("<style/>").text(css).appendTo($("#styleDiv"));
