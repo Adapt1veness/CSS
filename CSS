@@ -1,0 +1,515 @@
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" >
+</head>
+
+
+
+<!------------- Layout - changing this not recommended ------------->
+<div class="container" id='filters-block'>
+  <div class="Image" style='z-index:0'></div>
+  <div class="Background" style='z-index:1'></div>
+  <div class="White" style='z-index:2'></div>
+  
+<!--------------- Top left title/description area ----------------->
+ 
+ <div class="Report-title">
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/KLM_logo.svg"/>
+              <h3>KLM E&M Machining</h3>
+              <h1>Productivity  <br>Dashboard </h1>
+              <p>This is a <b>Demo Dashboard </b> to present some UX/UI Design elements that can be used in TIBCO Spotfire. Most of the features are based on HTML/CSS/Javascript and IronPython and can be used to increase <b>engagement</b> with the endusers.  
+              </p>
+	    <div class = 'info-header'>
+	      <h4> <span style="color: var(--gray); font-weight: normal;">Point of contact</span><br>To be determined</h4> 
+	    </div>
+	    <div class = 'info-header' >
+	      <h4> <span style="color: var(--gray); font-weight: normal;">Last updated</span><br> Jul 1st, 2022</h4> <br>
+	    </div>
+  </div>
+
+
+
+<!--------------------------- Block 1 ----------------------->
+ 
+<div class="Info info" id='p1-3' style='z-index:6 !important'>
+    <div class = 'info-header'>
+    <!-- <h4>Report links</h4> -->
+    </div>
+		<h4 id="dqm-title" class='title'>Demo  <br> Page 1 </h4>
+
+	<div class="buttons-wrapper">
+			<div class="simple-button single-btn"><SpotfireControl id="3db1ab5f23e8452499695a382e07affb" />
+				<span class="fa fa-chevron-right arrow-left"></span> 
+				<div id="dqm-1" class="dqm-tooltip">
+
+The<b> first page </b> shows a typical Spotfire analysis page with no CSS/scripting.
+              
+<br><br><br>
+
+				</div>
+			</div>
+</div>		
+  </div>
+<!-------------------------- Block 2 ----------------------->
+
+  <div class="Report-1 info" id='p1-4' style='z-index:5 !important'>
+  <div class = 'info-header'>
+    </div>
+		<h4 class='title'>Demo <br> Page 2</h4>
+
+		<div class="buttons-wrapper">
+			<div class="simple-button single-btn"><SpotfireControl id="3db1ab5f23e8452499695a382e07affb" />
+				<span class="fa fa-chevron-right arrow-left"></span>
+				<div id="mqm-1" class="dqm-tooltip">
+
+The<b> second page </b> shows insights on a more natural way of page navigation, filtering and better looking KPI tiles.
+
+
+<br><br><br>
+				</div>
+</div>
+			
+		</div>
+  </div>
+  
+<!-------------------------- Block 3 -----------------------
+
+  <div class="Report-2 info" id='p1-5' style='z-index:4 !important'>
+        <div class = 'info-header'>
+    </div>
+		<h4 class='title'>Page<br> Placeholder</h4>
+		<div class="buttons-wrapper">
+		<div class="simple-button single-btn"><span class="fa fa-chevron-right arrow-left"></span><SpotfireControl id="3db1ab5f23e8452499695a382e07affb" /></div>
+
+  </div>
+  </div>
+  
+<!-------------------------- Block 4 -----------------------
+
+<div class="line Report-3 info" id='p1-6' style='z-index:4 !important'>
+        <div class = 'info-header'>
+    </div>
+		<h4 class='title'>About this <br> Dashboard</h4>
+		<div class="buttons-wrapper">
+<div class="simple-button single-btn"><span class="fa fa-chevron-right arrow-left"></span><SpotfireControl id="3db1ab5f23e8452499695a382e07affb" /></div>
+  </div>
+  </div>
+
+
+<!------------------- CSS Stylesheet ------------------------>
+
+
+<style> 
+:root{da
+	--indigo: #6610f2;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #807f8b;
+	--gray-dark: #555464;
+	--primary: #003145;
+	--primary-2: #003F72;
+	--secondary: #00A1DE;
+	--success: #43b02a;
+	--info: #17a2b8;
+	--warning: #f19835;
+	--danger: #ea321e;
+	--light: #fff;
+	--dark: rgba(30, 30, 30, 1);
+	--primary-700: rgba(16,10,161,0.7);
+	--primary-400: rgba(16,10,161,0.4);
+	--primary-300: rgba(16,10,161,0.3);
+	--primary-150: rgba(16,10,161,0.15);
+	--blue: #063ed1;
+	--bright-blue: #5EB6E4;
+	--light-blue: #C2DEEA;
+	--light-blue-400: #e2eff7;
+	--green: #43b02a;
+	--blue-green: #00bfb3;
+	--yellow: #eae136;
+	--orange: #E37222;
+	--red: #ea321e;
+	--pink: #ea38e6;
+	--purple: #003145;
+	--background:#eff2f4;
+	--box-shadow: rgba(60, 60, 60, 0.1) 0px 3px 10px;
+	--hover: rgba(174,176,179,0.2);
+	--border-color:rgba(210,210,210,1);
+	--border-light-color:rgba(255,255,255,1);
+	--border:1px solid var(--border-color);
+	--border-light:1px solid var(--border-light-color);
+	--main-gradient: linear-gradient(45deg, var(--primary-2) 0%, var(--bright-blue) 100%);
+	--purple-gradient: linear-gradient(45deg,  #003145, var(--primary));
+        --buttons-gradient: linear-gradient(45deg,var(--bright-blue)  0%, var(--primary) 85%);
+	--columns: 5; /* equal spaced columns */
+	--columns-small: 4; /* one less, image right gets cropped */
+	--column-white: 4; /* columns + 1 */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 7% repeat(var(--columns), 1fr);
+  grid-template-rows: 3fr 2fr;
+  grid-auto-flow: row;
+  justify-content: start;
+  background-color:transparent;
+}
+
+
+@media(max-width:1400px){
+  .container {
+    grid-template-columns: 7% repeat(var(--columns-small), 1fr);
+    grid-template-rows: 3fr 4fr;
+  }  
+}
+
+.line {
+  border-right: var(--border);
+  position: relative;
+  z-index:4 !important;
+}
+
+.white-line {
+  border-right: var(--border-light);
+  position: relative;
+  z-index:3;
+}
+
+.hor-line {
+  border-top: var(--border-light);
+  position: relative;
+  z-index:0;
+}
+
+.Report-title { 
+  grid-area: 1 / 2 / 2 / 4;
+  padding-right: 5vw;
+  padding-top: 2vh;
+  z-index:4;
+}
+
+.Image { 
+  grid-area: 1 / 1 / 4 / 99; 
+  background: url("4298c927c6f546adb96118b76a759565.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index:0;
+}
+
+.welcome {
+  color: #000 !important;
+}
+
+.White {
+  grid-area: 2 / 1 / 4 / var(--column-white); 
+  background: white !important;
+  opacity: 0.95;
+  box-shadow: var(--box-shadow);
+  z-index = 2 !important;
+  justify-content: center;
+  align-text: center;
+}
+
+.Background { 
+  grid-area: 1 / 1 / 2 / 4; 
+  background-color: var(--background);
+  opacity: 0.98;
+  z-index: 3;
+
+}
+
+@media(max-width:1000px){
+  .Report-title {
+	grid-area: 1 / 2 / 2 / 5;
+  }  
+  .Background { 
+	grid-area: 1 / 1 / 2 / 5; 
+ }
+}
+
+.userIntro { grid-area: 2 / 2 / 3 / 5;
+  height: 40px;
+  font-size: calc(1.1em + 0.4vh);
+}
+.switchView { grid-area: 2 / 5 / 3 / 6;
+  height: 40px;
+  font-size: 10px !important;
+}
+ 
+.Info { grid-area: 3 / 2 / 3 / 3; }
+  
+.Report-1 { grid-area: 3 / 3 / 3 / 4; }
+.Report-2 { grid-area: 3 / 4 / 3 / 5; }
+.Report-3 { grid-area: 3 / 5 / 3 / 6; }
+.Report-4 { grid-area: 3 / 6 / 3 / 7; }
+
+
+
+
+html, body , .container {
+  height: 93vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+  
+/* Text styles */
+
+#logo{
+  position:relative; 
+  margin-top:2vh;
+  bottom:0; 
+  border: 0; 
+  width: calc(70px + 2vw); 
+  height: 7vh; 
+}
+
+h1{
+  color: var(--primary);
+  letter-spacing: -2px;
+  font-size: calc(1rem + 1.6vw);
+  font-weight: 700;
+  line-height:1;
+}
+
+.dark-blue {
+	color: var(--primary) !important;
+}
+
+h3{
+	color: var(--bright-blue);
+	margin-left:-1px; 
+	margin-top:1vh;
+	margin-bottom:5vh;
+	text-align: left; 
+	font-size: calc(0.8em + 0.8vmin);
+}
+
+p{
+	text-align:left;
+	font-weight:lighter; 
+	//margin-top:-35px; 
+	margin-right:-10em; 
+	z-index:1; 
+	font-size: calc(1rem + 0.2vmin);
+    color:var(--dark)
+}
+.switch-view {
+    color: var(--primary) !important;
+    text-align:right;
+    padding:30px; 
+    font-size:calc(0.8rem + 0.2vmin); 
+    font-weight:bold;
+    cursor:pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height:1.5;
+}
+
+/*   Button medium size blue */
+div.button-medium a{
+	//box-shadow: -1px 6px 7px -6px #6b6b6b;
+	background:var(--main-gradient);
+	background-color:#00429f;
+	//border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color: white !important;
+	font-family: Segoe UI Semibold, Verdana, Sans-Serif;
+	font-size:calc(0.7rem + 0.2vw);
+	padding: 10px;
+	text-decoration:none;
+	width:170px;
+}
+
+div.button-medium a:hover{
+	background:linear-gradient(to bottom left, #D21C98, #872FA5);
+	background-color:#0099ff;
+	text-decoration:none;
+}
+
+#button-contact{
+  display:none;
+  background-color: rgba(16,6,159,1);
+}
+.info {
+	padding: 5vh 0 10vh 0;
+	background-color: transparent;
+	//min-height: 20vh;
+	//max-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	transition: 0.25s ease;
+	z-index:4 !important;
+}
+
+@media(max-height: 700px){
+.info{
+	padding: 3vh 0;
+}
+
+.info-header h4{
+	line-height: 1;
+	margin-bottom: 0;
+}
+.Report-title { 
+	padding-top:1vh;
+}
+}
+
+.info-header h4{
+  margin:0 !important;
+  line-height: 1.5 !important;
+  margin-bottom: 2vh;
+  font-size: calc(1em + 0.3vh) !important;
+	color: var(--dark) !important;
+}
+
+.icon{
+  border:0;
+  width: 64px !important;
+  height: 64px !important;
+  margin-left: -5px;
+}
+
+.title{
+  color: var(--primary) !important;
+  font-size: calc(1.1em + 0.4vh);
+  padding-right: 5vw;
+}
+
+a {
+  text-decoration:none !important;
+  pointer: cursor;
+  font-weight:bold;
+}
+
+.hide{display:none;}
+
+
+.choose-btn{
+  cursor:pointer;
+  width:140px;
+}
+
+.level{
+    background-color:blue;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 10px;
+    width:170px;
+    font-size:calc(0.7rem + 0.2vw);
+    text-align:left;
+    text-decoration: none;
+
+}
+.level a{
+  color:white !important;
+}
+.sub-btn{
+  top:0;
+}
+.inner-visible {
+	display: block !important;
+	visible: visible;
+	overflow: hidden;
+}
+
+.inner-hidden {
+	visibility:hidden !important;
+	padding:0px !important;
+	border:0px !important;
+	height:0px !important;
+}
+.arrow-left{
+  position:absolute;
+  margin-right:5%;  
+  opacity:0;
+  pointer-events: none;
+}
+
+#dqm-1{
+}
+#dqm-2{
+}
+#dqm-3{
+}
+.dqm-tooltip {
+  background:var(--primary);
+  width:20vw;
+  max-width:250px;
+  min-width:180px;
+  height:350px;
+  border-radius: 5px 5px 5px 0px;
+  position:absolute;
+  margin-left:185px;
+  align-self:flex-end;
+  //margin-top:10px;
+  z-index:100 !important;
+  display: none;
+  /* display: none; on initialization */
+  padding:15px;
+  font-size:calc(0.7rem + 0.2vw);
+}
+.single-btn {
+  cursor: pointer;
+  width:190px;
+  max-width:200px;
+  padding-right:15px;
+  margin-top:10px;
+  display:inline-flex;
+  align-items:center;
+  color: white;
+}
+.single-btn:hover .dqm-tooltip { 
+   /* show the tooptip*/
+   display: block;
+   height: fit-content;
+
+}
+.single-btn:hover .arrow-left {
+	transition: 0.4s;
+	margin-left: 160px;
+	opacity:1;
+}
+.simple-button a {
+    background: var(--main-gradient);
+    color: white !important;
+    padding: 10px;
+    width:190px;
+    font-size:calc(0.7rem + 0.2vw);
+    text-align:left;
+    text-decoration: none;
+    font-weight:bold !important;
+  }
+
+
+.simple-button a:hover {
+    color: white !important;
+    background: var(--purple-gradient) !important;
+  }
+
+@media(min-width:1400px){
+.buttons-wrapper{
+  margin-bottom:auto;
+}
+}
+
+@media(max-width:1000px){
+.buttons-wrapper{
+  margin-top:auto;
+}
+}
+
+
+ /* set the page to correct z-index to not mess up data canvas and Spotfire client menus */
+.sfc-style-root .sf-element-visual-content.sfc-text-area { 
+  z-index: 0 !important;
+}
+
+</style>
