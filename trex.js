@@ -1,11 +1,4 @@
 function hideClass(name) {
-    var myClasses = document.querySelectorAll(name),
-   i = 0,
-   l = myClasses.length;
-
-   for (i; i < l; i++) {
-     myClasses[i].style.display = 'none';
-   }
  }
  // Copyright (c) 2023 The Chromium Authors. All rights reserved. Adaptation done by Elizalde Alexios
  // Use of this source code is governed by a BSD-style license that can be
@@ -48,10 +41,10 @@ function hideClass(name) {
  this.resizeTimerId_ = null;
  this.playCount = 0;
  // Sound FX.
- //this.audioBuffer = null;
-// this.soundFx = {};
+ this.audioBuffer = null;
+ this.soundFx = {};
  // Global web audio context for playing sounds.
- //this.audioContext = null;
+ this.audioContext = null;
  // Images.
  this.images = {};
  this.imagesLoaded = 0;
@@ -96,7 +89,7 @@ function hideClass(name) {
  MAX_SPEED: 12,
  MIN_JUMP_HEIGHT: 35,
  MOBILE_SPEED_COEFFICIENT: 1.2,
- //RESOURCE_TEMPLATE_ID: 'audio-resources',
+ RESOURCE_TEMPLATE_ID: 'audio-resources',
  SPEED: 6,
  SPEED_DROP_COEFFICIENT: 3
  };
@@ -150,7 +143,7 @@ function hideClass(name) {
  /**
  * Key code mapping.
  * @enum {object}
- *
+ */
  Runner.keycodes = {
  JUMP: {'38': 1, '32': 1}, // Up, spacebar
  DUCK: {'40': 1}, // Down
@@ -214,7 +207,7 @@ function hideClass(name) {
  },
  /**
  * Load and decode base 64 encoded sounds.
- 
+ */
  loadSounds: function() {
  if (!IS_IOS) {
  this.audioContext = new AudioContext();
@@ -626,7 +619,7 @@ function hideClass(name) {
  /**
  * Play a sound.
  * @param {SoundBuffer} soundBuffer
- *
+ */
  playSound: function(soundBuffer) {
  if (soundBuffer) {
  var sourceNode = this.audioContext.createBufferSource();
@@ -708,7 +701,7 @@ function hideClass(name) {
  /**
  * Decodes the base 64 audio to ArrayBuffer used by Web Audio.
  * @param {string} base64String
- *
+ */
  function decodeBase64ToArrayBuffer(base64String) {
  var len = (base64String.length / 4) * 3;
  var str = atob(base64String);
