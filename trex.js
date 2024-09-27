@@ -90,7 +90,7 @@ function hideClass(name) {
  MIN_JUMP_HEIGHT: 35,
  MOBILE_SPEED_COEFFICIENT: 1.2,
  RESOURCE_TEMPLATE_ID: 'audio-resources',
- SPEED: 6,
+ SPEED: 18,
  SPEED_DROP_COEFFICIENT: 3
  };
  /**
