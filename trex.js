@@ -214,7 +214,7 @@ function hideClass(name) {
  },
  /**
  * Load and decode base 64 encoded sounds.
- */
+ 
  loadSounds: function() {
  if (!IS_IOS) {
  this.audioContext = new AudioContext();
