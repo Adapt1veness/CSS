@@ -48,10 +48,10 @@ function hideClass(name) {
  this.resizeTimerId_ = null;
  this.playCount = 0;
  // Sound FX.
- this.audioBuffer = null;
- this.soundFx = {};
+ //this.audioBuffer = null;
+// this.soundFx = {};
  // Global web audio context for playing sounds.
- this.audioContext = null;
+ //this.audioContext = null;
  // Images.
  this.images = {};
  this.imagesLoaded = 0;
@@ -626,7 +626,7 @@ function hideClass(name) {
  /**
  * Play a sound.
  * @param {SoundBuffer} soundBuffer
- */
+ *
  playSound: function(soundBuffer) {
  if (soundBuffer) {
  var sourceNode = this.audioContext.createBufferSource();
@@ -708,7 +708,7 @@ function hideClass(name) {
  /**
  * Decodes the base 64 audio to ArrayBuffer used by Web Audio.
  * @param {string} base64String
- */
+ *
  function decodeBase64ToArrayBuffer(base64String) {
  var len = (base64String.length / 4) * 3;
  var str = atob(base64String);
