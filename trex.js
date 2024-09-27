@@ -150,7 +150,7 @@ function hideClass(name) {
  /**
  * Key code mapping.
  * @enum {object}
- */
+ *
  Runner.keycodes = {
  JUMP: {'38': 1, '32': 1}, // Up, spacebar
  DUCK: {'40': 1}, // Down
